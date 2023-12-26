@@ -1,6 +1,7 @@
 import Home from './home/Home';
 import Mall from './mall/Mall';
 import Message from './message/Message';
+import My from './my/My';
 import Order from './order/Order';
 
 type BottomNavType = {
@@ -77,7 +78,11 @@ struct Index {
       }.tabBar(this.TabBuilder(this.app_bottom_nav[3], 3))
 
       TabContent() {
-        Text(this.app_bottom_nav[4].name)
+        Column() {
+          My()
+        }
+        .height('100%')
+        .backgroundColor($r('app.color.page_bg_color'))
       }.tabBar(this.TabBuilder(this.app_bottom_nav[4], 4))
     }
     // .scrollable(false)
