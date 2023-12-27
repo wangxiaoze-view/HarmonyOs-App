@@ -1,3 +1,5 @@
+import router from '@ohos.router';
+
 type GridCardType = {
   icon: Resource;
   title: string;
@@ -36,6 +38,11 @@ export default struct GridCard {
           .borderRadius(6)
           .backgroundColor($r('app.color.bg_color'))
         }
+        .onClick(() => {
+          router.pushUrl({
+            url: 'pages/login/Login'
+          })
+        })
       }, item => JSON.stringify(item))
     }
     .height(this.cardHeight)
