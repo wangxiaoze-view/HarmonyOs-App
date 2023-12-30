@@ -11,7 +11,15 @@
 
 ### 视频效果如下：
 
-<video id="video" controls="" preload="none" poster="封面">
-      <source id="mp4" src="https://qiniu.wangxiaoze.wang/hexo-blog/75b0805854b5d774a41466501a09b71a_0_1703601067.mp4" type="video/mp4">
-</video>
+
+<iframe
+src="https://qiniu.wangxiaoze.wang/hexo-blog/75b0805854b5d774a41466501a09b71a_0_1703601067.mp4"
+scrolling="no"
+border="0"
+frameborder="no"
+framespacing="0"
+allowfullscreen="true"
+height=600
+width=800>
+</iframe>
 
