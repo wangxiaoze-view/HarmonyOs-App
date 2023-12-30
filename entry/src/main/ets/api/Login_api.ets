@@ -1,7 +1,7 @@
 import { httpRequestPost } from '../utils/HttpRequest'
 
 enum Login_api {
-  Login = '/v5/merchant/miniProgramLogin'
+  Login = 'xxxx'
 }
 
 export function ProxyLogin(params) {

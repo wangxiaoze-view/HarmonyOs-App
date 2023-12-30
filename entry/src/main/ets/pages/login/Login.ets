@@ -1,9 +1,5 @@
 import Prompt from '@system.prompt'
-import hilog from '@ohos.hilog'
 import { ProxyLogin } from '../../api/Login_api'
-import Logger from '../../utils/Logger'
-import { httpRequestGet } from '../../utils/HttpRequest'
-import http from '@ohos.net.http'
 
 @Entry
 @Component
@@ -116,9 +112,6 @@ struct Login {
         .width('100%')
         .padding(42)
         .alignItems(HorizontalAlign.Start)
-
-
-
 
       }
       .width('100%')

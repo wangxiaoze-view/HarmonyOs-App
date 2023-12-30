@@ -1,5 +1,4 @@
 import http from '@ohos.net.http';
-import hilog from '@ohos.hilog';
 import Logger from './Logger';
 import { CryptoJS } from '@ohos/crypto-js'
 import Prompt from '@system.prompt';
@@ -38,8 +37,8 @@ export function httpRequestPost(url: string, params?: any) {
 function httpRequest(url: string, method: http.RequestMethod, params?: any) {
   let httpRequest = http.createHttp();
 
-  const appId = '24810687'
-  const appKey = 'b993adbb2d313c4c'
+  const appId = ''
+  const appKey = ''
   let timestamp = new Date().getTime();
   let nonce = getNonce()
   let signStr = appKey + "&" + timestamp + "&" + nonce;
@@ -50,7 +49,7 @@ function httpRequest(url: string, method: http.RequestMethod, params?: any) {
   }
 
 
-  let responseResult = httpRequest.request('http://gw.uat.anbangke.com' + url, {
+  let responseResult = httpRequest.request('你自己的请求域名' + url, {
     method: method,
     readTimeout: 60 * 1000, //读取超时时间 可选，默认为60000ms
     header: {
